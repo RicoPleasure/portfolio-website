@@ -1,6 +1,6 @@
 # Portfolio Website
 
-<img src="" />
+<img src="./screenshots/WebsiteScreenshot" />
 
 
 I am developing this website to display my projects (and learn more about react routes). It's not my main project for now but I am working on it at the weekends when I have nothing to do. Note that this does not mean that I am not doing it well done.
