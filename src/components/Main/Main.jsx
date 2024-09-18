@@ -34,7 +34,6 @@ const Main = () => {
             
             <button className={styles.checkMoreButton} onClick={() => {
                 const element = document.querySelector('#projectsContainer');
-                console.log(element)
                 element?.scrollIntoView({
                     behavior: 'smooth'
                 })

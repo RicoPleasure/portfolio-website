@@ -20,9 +20,10 @@
     width: 700px;
     height: 500px;
     background-color: var(--mainWhite);
-    border-radius: 20px;
+    border-radius: 16px;
     display: flex;
     justify-content: center;
+    border: 2px solid var(--primary);
 }
 
 /*Section 1*/
@@ -34,6 +35,11 @@
     justify-content: space-between;
 }
 
+.section:nth-child(1) h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
 .profileImage {
     width: 220px;
     height: 220px;  
@@ -42,6 +48,7 @@
     background-size: cover;
     border-radius: 110px;
     margin-top: 70px;
+    border: 2px solid var(--primary);
 }
 
 .sectionOneText {
@@ -82,6 +89,7 @@
     grid-template-rows: repeat(3, auto);
     grid-column: auto auto auto;
     padding: 30px 50px 50px 50px;
+    gap: 45px;
 }
  
 .iconsContainer i {
@@ -91,14 +99,14 @@
     font-size: 3em;
 }
 
-/*Button 2*/
+/*Button*/
 
 .checkMoreButton {
     width: 500px;
     height: 100px;
     background-color: var(--primary);
     border-radius: 50px;
-    border: none;
+    border: 2px solid var(--mainWhite);
     cursor: pointer;
     color: var(--mainWhite);
     font-size: 1.1em;

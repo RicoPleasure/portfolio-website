@@ -2,6 +2,7 @@ import styles from './Header.module.css'
 import React from 'react'
 
 const Header = () => {
+
   return (
     <>
         <header>
@@ -12,7 +13,10 @@ const Header = () => {
                 <a href="/">Home</a>
                 <a href="/projects">Projects</a>
                 <a href="/contact">Contact</a>
+                <button>
+                </button>
             </nav>
+            
         </header>
     </>
     
