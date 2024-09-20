@@ -1,5 +1,4 @@
 import React from 'react'
-import $ from 'jquery'
 import App from '../../App'
 
 const ContactsSection = () => {
@@ -52,14 +51,7 @@ const ContactsSection = () => {
 
         {/* Email Form */}
         <div id='emailForm' className='bg-mainWhite rounded-3xl h-[800px] w-[60%] mb-[84px] border-2 border-primary'>
-            <form action="" method='POST' onSubmit={(event) => handleSubmit(event)}>
-                
-                <h2>Send an email</h2>
-
-                <label for="message">Message</label>
-                <textarea typeof='email' name="message" id="message" required></textarea>
-                <button type="submit" value="Send">Jonas</button>
-            </form>
+            
         </div>
     </div>
   )

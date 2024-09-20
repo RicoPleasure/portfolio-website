@@ -48,7 +48,7 @@
     background-size: cover;
     border-radius: 110px;
     margin-top: 70px;
-    border: 2px solid var(--primary);
+    border: 1px solid var(--secondary);
 }
 
 .sectionOneText {
