@@ -9,6 +9,7 @@
     --fourth: #BFBFBF;
     --fifth: #C8C8C8;
     --mainWhite: #eeeeee;
+    --profilePicture: url(../src/imgs/profile.jpg);
   }
 
 * {
@@ -22,5 +23,5 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(imgs/wpp-2.jpg);
+    background-image: url(imgs/appWallpaper.jpg);
 }

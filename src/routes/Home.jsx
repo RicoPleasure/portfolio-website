@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Main from '../components/Main/Main'
-import ProjectsSection from '../components/ProjectsSection/ProjectsSection'
+import Main from '../components/Main'
+import ProjectsSection from '../components/ProjectsSection'
 
 const Home = () => {
   return (
