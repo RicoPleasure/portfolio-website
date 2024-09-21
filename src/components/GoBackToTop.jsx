@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 
 const GoBackToTop = () => {
-
+    {/* State */}
     const [isVisible, setIsVisible] = useState(false)
 
+    {/* Observation */}
     useEffect(() => {
         const toggleVisibility = () => {
             if (window.scrollY > 100) {
@@ -18,6 +19,7 @@ const GoBackToTop = () => {
         return () => window.removeEventListener('scroll', toggleVisibility)
     }, [])
 
+    {/* Functionality */}
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -25,6 +27,7 @@ const GoBackToTop = () => {
         })
     }
 
+    {/* Render */}
     if (!isVisible) {
         return null
     } 
