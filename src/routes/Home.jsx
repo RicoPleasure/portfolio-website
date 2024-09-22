@@ -7,7 +7,10 @@ const Home = () => {
   return (
     <div>
         <Main />
-        <ProjectsSection />
+        <ProjectsSection 
+          quantityProjects="4"  
+          moreProjectsButton=""
+        />
     </div>
   )
 }

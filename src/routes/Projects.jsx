@@ -4,7 +4,7 @@ import ProjectsSection from '../components/ProjectsSection'
 const Projects = () => {
   return (
     <div>
-      <ProjectsSection />
+      <ProjectsSection quantityProjects="6" moreProjectsButton="hidden"/>
     </div>
   )
 }

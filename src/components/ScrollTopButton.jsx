@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import ScrollToTop from './ScrollToTop'
 
-const GoBackToTop = () => {
+const ScrollTopButton = () => {
     {/* State */}
     const [isVisible, setIsVisible] = useState(false)
 
@@ -19,14 +20,6 @@ const GoBackToTop = () => {
         return () => window.removeEventListener('scroll', toggleVisibility)
     }, [])
 
-    {/* Functionality */}
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-    }
-
     {/* Render */}
     if (!isVisible) {
         return null
@@ -34,9 +27,8 @@ const GoBackToTop = () => {
 
     return (
         <div>
-            <button className='w-[80px] h-[80px] fixed bottom-[80px] right-[60px] bg-primary text-mainWhite text-2xl p-2 rounded-[25px]' onClick={scrollToTop}>&#8593;</button>
+            <button className='w-[80px] h-[80px] fixed bottom-[40px] right-[40px] bg-mainWhite text-primary border-[2px] border-[primary] text-2xl p-2 rounded-[40px] z-[102]' onClick={ScrollToTop}>&#8593;</button>
         </div>
     )
 }
-
-export default GoBackToTop
+export default ScrollTopButton

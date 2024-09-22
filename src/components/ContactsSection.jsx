@@ -2,74 +2,65 @@ import React from 'react'
 import { translations } from './LanguageProvider/Translations'
 import { useLanguage } from './LanguageProvider/LanguageProvider'
 
+/**
+ * ContactsSection Component
+ * 
+ * This component renders a section displaying social media contact information.
+ * It includes icons, titles, and links for different social media platforms.
+ */
 const ContactsSection = () => {
+  // Array of CSS classes for social media icons
+  const icons = [
+    'devicon-github-plain',
+    'devicon-linkedin-plain',
+    'devicon-twitter-plain',
+  ]
 
+  // Array of social media platform names
+  const socialMedia = [
+    'GitHub',
+    'LinkedIn',
+    'X'
+  ]
+
+  // Array of social media profile URLs
+  const linksSocialMedia = [
+    'https://github.com/RicoPleasure',
+    'https://www.linkedin.com/in/enrico-prazeres-4b44a7214/',
+    'https://x.com/esprazj',
+  ]
+
+  // Hook to access the current language
   const { language } = useLanguage()
 
   return (
-    <>
-        {/* Container */}
-        <div className='w-screen h-fit bg-transparent flex place-items-center flex-col pt-[70px]'>    
-            {/* Container Platforms Boxes */}
-            <div className='bg-mainWhite rounded-3xl h-[600px] w-[60%] mb-[30px] border-2 border-primary flex place-items-center place-content-evenly p-[50px]'>
-                {/* Box 1 */}
-                <div className='h-[380px] w-[300px] border-2 border-primary rounded-3xl flex flex-col place-items-center place-content-evenly'>
-                    {/* Icon */}
-                    <i className="devicon-github-plain text-[6em]"></i>
-                    {/* Title */}
-                    <h2 className='text-[2em]'>
-                        GitHub
-                    </h2>
-                    {/* Button */}
-                    <a href="https://github.com/RicoPleasure" target="_blank" className='w-[200px] h-[60px] rounded-[20px] bg-mainWhite text-primary border-2 border-primary text-[1.2em] hover:bg-primary hover:text-mainWhite transition-[2s] place-content-center text-center'>
-                        {translations[language].travel}
-                    </a>
-                </div>
-                {/* Box 2 */}
-                <div className='h-[380px] w-[300px] border-2 border-primary rounded-3xl flex flex-col place-items-center place-content-evenly'>
-                    {/* Icon */}
-                    <i className="devicon-linkedin-plain text-[6em]"></i>
-                    {/* Title */}
-                    <h2 className='text-[2em]'>
-                        Linkedin
-                    </h2>
-                    {/* Button */}
-                    <a href="https://www.linkedin.com/in/enrico-prazeres-4b44a7214/" target="_blank" className='w-[200px] h-[60px] rounded-[20px] bg-mainWhite text-primary border-2 border-primary text-[1.2em] hover:bg-primary hover:text-mainWhite transition-[2s] place-content-center text-center'>
-                        {translations[language].travel}
-                    </a>
-                </div>
-                {/* Box 3 */}
-                <div className='h-[380px] w-[300px] border-2 border-primary rounded-3xl flex flex-col place-items-center place-content-evenly'>
-                    {/* Icon */}
-                    <i className="devicon-twitter-plain text-[6em]"></i>
-                    {/* Title */}
-                    <h2 className='text-[2em]'>
-                        Twitter
-                    </h2>
-                    {/* Button */}
-                    <a href="https://www.x.com/esprazj" target="_blank" className='w-[200px] h-[60px] rounded-[20px] bg-mainWhite text-primary border-2 border-primary text-[1.2em] hover:bg-primary hover:text-mainWhite transition-[2s] place-content-center text-center'>
-                        {translations[language].travel}
-                    </a>
-                </div>
-            </div>
-            {/* ScrollDownButton */}
-            <button onClick={() => {
-                const element = document.getElementById('emailForm')
-                console.log(element)
-                element?.scrollIntoView({
-                    top: element.offsetTop,
-                    behavior: 'smooth'
-                })
-            }} className='w-[500px] h-[80px] rounded-[50px] bg-primary text-mainWhite mb-[200px] border-2 border-mainWhite hover:bg-mainWhite hover:text-primary transition-[2s]'>
-                {translations[language].sendEmail}
-            </button>
-
-            {/* Email Form */}
-            <div id='emailForm' className='bg-mainWhite rounded-3xl h-[800px] w-[60%] border-2 border-primary'>
-                
-            </div>
-        </div>
-    </>
+    // Main container with flex layout
+    <div className='w-full lg:h-[82vh] flex-grow flex flex-col place-content-between place-items-center bg-mainWhite relative z-[1]'>    
+      {/* Inner container for social media boxes */}
+      <div className='w-[90%] xl:w-[70%] 2xl:w-50% h-full flex flex-col lg:flex-row items-center justify-evenly p-[30px] lg:p-[0]'>
+        {/* Map through arrays to create social media boxes */}
+        {[...Array(3)].map((_, index) => (
+          // Individual social media box
+          <div key={index} className='w-full lg:w-[280px] 2xl:w-[400px]  h-[300px] lg:h-[400px] border-2 border-primary rounded-3xl flex flex-col items-center justify-evenly mb-[30px] p-[10px] relative z-[2]'>
+            {/* Social media icon */}
+            <i className={`${icons[index]} text-[6em]`}></i>
+            {/* Social media platform name */}
+            <h2 className='text-[2em]'>
+              {socialMedia[index]}
+            </h2>
+            {/* Link button to social media profile */}
+            <a 
+              href={`${linksSocialMedia[index]}`} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className='w-[160px] h-[60px] rounded-[20px] bg-mainWhite text-primary border-2 border-primary text-[1.2em] transition-[2s] place-content-center text-center hover:bg-primary hover:text-mainWhite flex items-center justify-center relative z-[3]'
+            >
+              {translations[language].travel}
+            </a> 
+          </div>
+        ))}
+      </div>              
+    </div>
   )
 }
 
