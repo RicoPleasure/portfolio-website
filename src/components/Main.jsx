@@ -9,11 +9,11 @@ const Main = () => {
             {/* Container */}
             <div className="h-[object-fit] flex justify-between place-items-center flex-col xl:my-[85px]">
                 {/* Container Boxes */}
-                <div className="py-[30px] bg-mainWhite xl:bg-opacity-0 w-[80%] flex flex-col xl:flex-row justify-evenly place-items-center">
+                <div className="py-[30px] bg-mainWhite xl:bg-opacity-0 w-[100%] xl:w-[80%] flex flex-col xl:flex-row justify-evenly place-items-center">
                     {/* Box 1 */}
-                    <div className="w-full xl:w-[700px] h-[400px] xl:bg-mainWhite flex flex-col items-center justify-center xl:rounded-[30px]">
+                    <div className="w-full xl:w-[40%] h-[400px] xl:bg-mainWhite flex flex-col items-center justify-center xl:rounded-[30px]">
                         {/* Profile Picture */}
-                        <div className="w-[220px] h-[220px] bg-[url(../src/imgs/profile.jpg)] bg-center bg-cover rounded-[110px] mb-[40px] border border-[var(--secondary)]"></div>
+                        <div className="w-[220px] h-[220px] bg-[url(../src/imgs/profile.jpg)] bg-center bg-cover rounded-[110px] mb-[40px] border border-[var(--secondary)] xl:w-[180px] xl:h-[180px]"></div>
                         {/* Description */}
                         <div className="w-3/5 flex flex-col justify-center items-center text-center leading-[1.2em]">
                             <h2 className="text-[1.6em] mb-[30px]">Enrico Prazeres</h2>
@@ -21,11 +21,11 @@ const Main = () => {
                         </div>
                     </div>
                     {/* Box 2 */}
-                    <div className="w-full xl:w-[700px] h-[400px] xl:rounded-[30px] xl:bg-mainWhite flex flex-col justify-center place-items-center">
+                    <div className="w-full xl:w-[40%] h-[400px] xl:rounded-[30px] xl:bg-mainWhite flex flex-col justify-center place-items-center">
                         {/* Title */}
                         <h2 className="text-[1.6em] select-none">{translations[language].experienced}</h2>
                         {/* Icons */}
-                        <div className="lg:w-[40%] w-[70%] h-3/5 mt-[30px] grid grid-cols-3 grid-rows-3 p-[30px_55px_30px_55px] gap-[50px]">
+                        <div className="lg:w-[60%] w-[70%] h-3/5 mt-[30px] grid grid-cols-3 grid-rows-3 p-[30px_55px_30px_55px] gap-[50px]">
                             <i className="devicon-javascript-plain flex items-center justify-center text-[3em] md:"></i>
                             <i className="devicon-css3-plain flex items-center justify-center text-[3em]"></i>
                             <i className="devicon-html5-plain flex items-center justify-center text-[3em]"></i>
