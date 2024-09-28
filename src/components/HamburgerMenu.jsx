@@ -45,7 +45,7 @@ const HamburgerMenu = (props) => {
                 {/* Menu Content */}
                 <div className={`${menuContentClasses} ${isOpen ? 'w-full z-[51]' : 'z-[49]'}`} onClick={toggleMenu}>
                     <Link to="/" className={`${linkClasses} ${isOpen ? '' : 'opacity-0'}`}>{translations[language].home}</Link>
-                    <Link to="/projects" className={`${linkClasses} ${isOpen ? '' : 'opacity-0'}`}>{translations[language].projects}</Link>
+                    <Link to="/projects" className={`${linkClasses} ${isOpen ? '' : 'opacity-0'}`}>{translations[language].projectsLink}</Link>
                     <Link to="/contact" className={`${linkClasses} ${isOpen ? '' : 'opacity-0'}`}>{translations[language].contact}</Link>
                     
                 </div>

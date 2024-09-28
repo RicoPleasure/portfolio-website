@@ -8,7 +8,7 @@ const Home = () => {
     <div>
         <Main />
         <ProjectsSection 
-          quantityProjects="4"  
+          quantityProjects="2"  
           moreProjectsButton=""
         />
     </div>

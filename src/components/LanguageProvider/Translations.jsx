@@ -1,33 +1,112 @@
 export const translations = {
+  // English translations
   en: {
-    // Header
+    // Header section translations
     home: "Home",
-    projects: "Projects",
+    projectsLink: "Projects",
     contact: "Contact",
 
-    // Main
+    // Main section translations
     description: "1st Semester of the Bachelor's Degree in Computer Engineering at the University of Minho, Portugal",
     experienced: "Experienced with:",
     checkMore: "Check my projects out!",
 
-    // Contacts Section
+    // Contacts section translations
     travel: "Travel",
     sendEmail: "Send me an email",
+    
+    // Projects section translations
+    // Array of projects, each containing:
+    // [title, description, technologies, GitHub link text, Live link text]
+    projects: [
+      [
+        "Portfólio Web",
+        "This website you're on right now. I made this website to test my abilities with React and show my projects and skills.",
+        "React | Tailwind CSS | JavaScript | HTML",
+      ],
+      [
+        "2D Game",
+        "A simple 2D game made to learn the basics of Haskell and the Gloss Library. Prepairing for a future project.", 
+        "Haskell | Gloss Library", 
+      ],
+      [
+        "Available Soon",
+        "This project is not available yet, but it will be soon.",
+        "None",
+      ],
+      [
+        "Available Soon",
+        "This project is not available yet, but it will be soon.",
+        "None",
+      ],
+      [
+        "Available Soon",
+        "This project is not available yet, but it will be soon.",
+        "None",
+      ],
+      [
+        "Available Soon",
+        "This project is not available yet, but it will be soon.",
+        "None",
+      ],
+    ],
+
+    seeMoreProjects: "See more projects",
   },
+
+  // Portuguese translations
   pt: {
-    // Header
+    // Header section translations
     home: "Inicio",
-    projects: "Projetos",
+    projectsLink: "Projetos",
     contact: "Contato",
 
-    // Main
+    // Main section translations
     description: "1º Semestre do Curso de Engenharia Informática na Universidade do Minho, Portugal",
     experienced: "Tenho experiência com:",
     checkMore: "Veja meus projetos!",
     
-    // Contacts Section
+    // Contacts section translations
     travel: "Viajar",
     sendEmail: "Envia-me um email",
+
+    // Projects section translations
+    // Array of projects, each containing:
+    // [title, description, technologies, GitHub link text, Live link text]
+    projects: [
+      [
+        "Portfólio Web",
+        "O site em que você está agora. Este site foi feito para testar minhas habilidades em React e para poder mostrar meus projetos e habilidades.",
+        "React | Tailwind CSS | JavaScript | HTML",
+      ],
+      [
+        "Jogo 2D",
+        "Um jogo 2D simples feito para eu aprender a base de Haskell e a biblioteca Gloss.", 
+        "Haskell | Gloss Library", 
+      ],
+      [
+        "Disponível em breve",
+        "Este projeto ainda não está disponível, mas estará em breve.",
+        "None",
+      ],
+      [
+        "Disponível em breve",
+        "Este projeto ainda não está disponível, mas estará em breve.",
+        "None",
+      ],
+      [
+        "Disponível em breve",
+        "Este projeto ainda não está disponível, mas estará em breve.",
+        "None",
+      ],
+      [
+        "Disponível em breve",
+        "Este projeto ainda não está disponível, mas estará em breve.",
+        "None",
+      ],
+    ],
+
+    seeMoreProjects: "Veja mais projetos",
   },
-  // other languages...
+  // more languages can be added here
 };
