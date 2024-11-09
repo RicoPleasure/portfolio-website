@@ -80,9 +80,9 @@ export const translations = {
         "React | Tailwind CSS | JavaScript | HTML",
       ],
       [
-        "Jogo 2D",
-        "Um jogo 2D simples feito para eu aprender a base de Haskell e a biblioteca Gloss.", 
-        "Haskell | Gloss Library", 
+        "Calculadora de matrizes",
+        "Um website para fazer operações de matrizes. Feito para estudar álgebra e phoenix.",
+        "Elixir | Phoenix LiveView | Tailwind CSS" 
       ],
       [
         "Disponível em breve",

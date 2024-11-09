@@ -11,7 +11,7 @@ const Main = () => {
                 {/* Container Boxes */}
                 <div className="py-[30px] bg-mainWhite xl:bg-opacity-0 w-[100%] xl:w-[80%] flex flex-col xl:flex-row justify-evenly place-items-center">
                     {/* Box 1 */}
-                    <div className="w-full xl:w-[40%] h-[400px] xl:bg-mainWhite flex flex-col items-center justify-center xl:rounded-[30px]">
+                    <div className="w-full xl:w-[40%] h-[400px] xl:bg-mainWhite flex flex-col items-center justify-center xl:rounded-[5px]">
                         {/* Profile Picture */}
                         <div className="w-[220px] h-[220px] bg-[url(../src/imgs/profile.jpg)] bg-center bg-cover rounded-[110px] mb-[40px] border border-[var(--secondary)] xl:w-[180px] xl:h-[180px]"></div>
                         {/* Description */}
@@ -21,26 +21,30 @@ const Main = () => {
                         </div>
                     </div>
                     {/* Box 2 */}
-                    <div className="w-full xl:w-[40%] h-[400px] xl:rounded-[30px] xl:bg-mainWhite flex flex-col justify-center place-items-center">
+                    <div className="w-full xl:w-[40%] h-[400px] xl:rounded-[5px] xl:bg-mainWhite flex flex-col justify-center place-items-center">
                         {/* Title */}
                         <h2 className="text-[1.6em] select-none">{translations[language].experienced}</h2>
                         {/* Icons */}
-                        <div className="lg:w-[60%] w-[70%] h-3/5 mt-[30px] grid grid-cols-3 grid-rows-3 p-[30px_55px_30px_55px] gap-[50px]">
+                        <div className="lg:w-[60%] w-[70%] h-3/5 mt-[30px] grid grid-cols-4 grid-rows-3 p-[30px_55px_30px_55px] gap-[50px]">
                             <i className="devicon-javascript-plain flex items-center justify-center text-[3em] md:"></i>
+                            <i className="devicon-typescript-plain flex items-center justify-center text-[3em]"></i>
                             <i className="devicon-css3-plain flex items-center justify-center text-[3em]"></i>
                             <i className="devicon-html5-plain flex items-center justify-center text-[3em]"></i>
-                            <i className="devicon-gitlab-plain flex items-center justify-center text-[3em]"></i>
-                            <i className="devicon-archlinux-plain flex items-center justify-center text-[3em]"></i>
+                            <i className="devicon-nextjs-plain flex items-center justify-center text-[3em]"></i>
                             <i className="devicon-react-plain flex items-center justify-center text-[3em]"></i>
-                            <i className="devicon-c-plain flex items-center justify-center text-[3em]"></i>
+                            <i className="devicon-phoenix-plain flex items-center justify-center text-[3em]"></i>
+                            <i className="devicon-tailwindcss-plain flex items-center justify-center text-[3em]"></i>
+                            <i className="devicon-archlinux-plain flex items-center justify-center text-[3em]"></i>
+                            <i className="devicon-git-plain flex items-center justify-center text-[3em]"></i>
+                            <i className="devicon-elixir-plain flex items-center justify-center text-[3em]"></i>
                             <i className="devicon-haskell-plain flex items-center justify-center text-[3em]"></i>
-                            <i className="devicon-python-plain flex items-center justify-center text-[3em]"></i>
+
                         </div>
                     </div>
                 </div>
                 {/* Button Check More */}
                  <button 
-                        className="hidden sm:flex md:flex lg:flex xl:flex xl2:flex w-[500px] h-[100px] bg-[var(--primary)] rounded-[50px] border-2 border-[var(--mainWhite)] cursor-pointer text-[var(--mainWhite)] text-[1.1em] my-[70px] hover:bg-[var(--mainWhite)] hover:text-[var(--primary)] transition duration-600 place-items-center place-content-center"
+                        className="hidden sm:flex md:flex lg:flex xl:flex xl2:flex w-[500px] h-[100px] bg-[var(--primary)] rounded-[10px] border-2 border-[var(--mainWhite)] cursor-pointer text-[var(--mainWhite)] text-[1.1em] my-[70px] hover:bg-[var(--mainWhite)] hover:text-[var(--primary)] transition duration-600 place-items-center place-content-center"
                         onClick={() => {
                             const element = document.querySelector('#projectsContainer');
                             element?.scrollIntoView({

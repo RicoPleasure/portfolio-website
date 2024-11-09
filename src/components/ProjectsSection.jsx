@@ -44,7 +44,7 @@ const ProjectsSection = (props) => {
       {/* Main container */}
       <div id='projectsContainer' className="xl:w-full h-fit flex flex-col justify-center place-items-center xl:my-[60px]">
         {/* Projects grid */}
-        <div className="w-full h-fit grid grid-cols-1 gap-y-[10px] lg:grid-cols-2 lg:gap-x-[10px] lg:p-[10px] lg:bg-primary xl:w-[80%] ">
+        <div className="w-full h-fit grid grid-cols-1 gap-y-[10px] lg:grid-cols-2 lg:gap-x-[10px] lg:p-[10px] lg:bg-primary xl:w-[80%] rounded-[5px]">
           {/* Map through projects */}
           {Array.from({length: props.quantityProjects}).map((_, index) => (
             // Individual project box
@@ -66,7 +66,7 @@ const ProjectsSection = (props) => {
          <div className={`w-[100%] h-fit flex justify-center ${props.moreProjectsButton}`}>
          <button 
             onClick={handleClick}
-            className='w-[300px] h-[90px] rounded-[20px] text-mainWhite hover:text-primary text-center leading-[90px] bg-primary hover:bg-mainWhite border-[1px] hover:border-[1px] hover:border-primary transition-all duration-[0.4s] my-[20px]'
+            className='w-[300px] h-[90px] rounded-[10px] text-mainWhite hover:text-primary text-center leading-[90px] bg-primary hover:bg-mainWhite border-[1px] hover:border-[1px] hover:border-primary transition-all duration-[0.4s] my-[20px]'
           >
             {translations[language].seeMoreProjects}
          </button>

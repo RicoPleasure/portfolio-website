@@ -31,7 +31,7 @@ const ScrollTopButton = () => {
     return (
         <div>
             <button 
-                className='w-[80px] h-[80px] fixed bottom-[40px] right-[40px] bg-mainWhite text-primary border-[2px] border-[primary] text-2xl p-2 rounded-[40px] z-[102]' 
+                className='w-[80px] h-[80px] fixed bottom-[40px] right-[40px] bg-mainWhite text-primary border-[2px] border-[primary] text-2xl p-2 rounded-[10px] z-[102]' 
                 onClick={ScrollToTop}
             >
                 &#8593; {/* Up arrow character */}
