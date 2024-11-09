@@ -14,33 +14,30 @@ const ProjectsSection = (props) => {
 
   const projectLinks = [
     'https://github.com/RicoPleasure/portfolio-website',
-    'https://github.com/RicoPleasure/haskell-2d-game',
-    '#',
+    'https://github.com/RicoPleasure/matrix-calculator',
+    'https://github.com/RicoPleasure/task-manager',
     '#',
     '#',
     '#',
   ]
   const projectImages = [
-    '/projectsImages/portfolio-website.png ',
-    '/projectsImages/haskell-2d-game.png',
+    '/projectsImages/portfolio-website.png',
+    '/projectsImages/matrix-calculator.png',
     '/projectsImages/coming-soon.jpg',
     '/projectsImages/coming-soon.jpg',
     '/projectsImages/coming-soon.jpg',
     '/projectsImages/coming-soon.jpg',
   ]
 
-  // Hook for programmatic navigation
   const navigate = useNavigate();
 
-  // Handler for "See More Projects" button click
   const handleClick = (event) => {
-    event.preventDefault();
-    ScrollToTop();
-    // Use setTimeout to ensure the scroll completes before navigation
+    event.preventDefault()
+    ScrollToTop()
     setTimeout(() => {
-      navigate('/projects');
-    }, 100); // Adjust this delay if needed
-  };
+      navigate('/projects')
+    }, 100)
+  }
 
   return (
     <>

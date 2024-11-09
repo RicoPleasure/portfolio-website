@@ -25,9 +25,9 @@ export const translations = {
         "React | Tailwind CSS | JavaScript | HTML",
       ],
       [
-        "2D Game",
-        "A simple 2D game made to learn the basics of Haskell and the Gloss Library. Prepairing for a future project.", 
-        "Haskell | Gloss Library", 
+        "Matrix Calculator",
+        "A website to make matrix operations. Made it to study for both algebra and phoenix",
+        "Elixir | Phoenix LiveView | Tailwind CSS" 
       ],
       [
         "Available Soon",
